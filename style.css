@@ -1,0 +1,107 @@
+body {
+            background-color:white;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #d66b6b;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #b12572;
+            color: rgb(230, 225, 225);
+            font-family: monospace;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: monospace;
+        }
+
+        .primary-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .danger-btn {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .secondary-btn {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .todo-list {
+            margin-top: 20px;
+        }
+
+        .todo-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #b12572;
+            font-family: monospace;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            animation: slideIn 0.3s ease;
+        }
+
+        .todo-content {
+            flex: 1;
+            margin-right: 15px;
+        }
+
+        .todo-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-10px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .edit-input {
+            flex: 1;
+            padding: 8px;
+            background-color: #b12572;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            font-family: monospace;
+            border: 2px solid #4CAF50;
+        }
